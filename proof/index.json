@@ -1,0 +1,617 @@
+{
+  "schema": 1,
+  "sequence": "A180207",
+  "author": "Carlo Corti",
+  "scope": "Exact frozen originals; compact storage paths; historical layout restored only in scratch",
+  "archives": [
+    "proof/run.tgz",
+    "proof/evid.tgz"
+  ],
+  "originals": [
+    {
+      "original": "data/b180207.txt",
+      "bytes": 203,
+      "sha256": "47977361cf9cd79dd3ae5e191048fe3df3915e0dba2f2322ed12f99d1e316b00",
+      "mode": 436,
+      "role": "Canonical exact contiguous terms1..22",
+      "public": "data/b180207.txt"
+    },
+    {
+      "original": "outputs/dev/env.json",
+      "bytes": 8929,
+      "sha256": "7a85f8dd6d2076ecff60eb877432b9ddb6322e5ec09912bed5f0997cdc1c02a0",
+      "mode": 436,
+      "role": "Original host/compiler/runtime evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0009.json"
+    },
+    {
+      "original": "outputs/full16.cmd",
+      "bytes": 1195,
+      "sha256": "09c5131acd23b23fffcbf15388de981df732f1c69c939c0101860cbd199001e7",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0003.cmd"
+    },
+    {
+      "original": "outputs/full16.json",
+      "bytes": 1555,
+      "sha256": "30f48c99423212217f7deed484bce98bf2c2464676ca0ea03780ac790ae9e497",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0004.json"
+    },
+    {
+      "original": "outputs/partchk.cmd",
+      "bytes": 2798,
+      "sha256": "58f03479ea14dcaafdea06b0d6be247a2274997a0a5de873d6c5aff6227ec52c",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0007.cmd"
+    },
+    {
+      "original": "outputs/partchk.json",
+      "bytes": 530042,
+      "sha256": "7f8e6724768f46f4734efd7e956ec5b879bf5e44184e807d68dc71b588e0dafa",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0008.json"
+    },
+    {
+      "original": "outputs/probe.cmd",
+      "bytes": 3463,
+      "sha256": "b88e557d4d24ab11f4baa5d435aea7d102af5fc540d2e1884432e198d718efa9",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0001.cmd"
+    },
+    {
+      "original": "outputs/probe.json",
+      "bytes": 5242,
+      "sha256": "001c8b8c7fe880f1b43c1db2a74c7b1aeed0250548e13419567f25be1ba97136",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0002.json"
+    },
+    {
+      "original": "outputs/sidechk.cmd",
+      "bytes": 2589,
+      "sha256": "eb3d12af75d02fc1b24a2d36c81071c71b77aa7c4516f9ce5af4f69a636ab69b",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0005.cmd"
+    },
+    {
+      "original": "outputs/sidechk.json",
+      "bytes": 24318,
+      "sha256": "d4e964e841042398642c9d40829c44a340951d655ca34c774f513426060f22ba",
+      "mode": 436,
+      "role": "Original bounded development script/result",
+      "archive": "proof/evid.tgz",
+      "member": "e0006.json"
+    },
+    {
+      "original": "outputs/valid22/admit.json",
+      "bytes": 5437,
+      "sha256": "813ba7de266f0fef69d35a98933bc2c4fa5e15f623fde25bd2490fad0d98d9e0",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0012.json"
+    },
+    {
+      "original": "outputs/valid22/build.json",
+      "bytes": 1069,
+      "sha256": "8934d19e86b43414b31c47cbd4e9d64eab435f613d51c711f85c50ddd44e5628",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0014.json"
+    },
+    {
+      "original": "outputs/valid22/ie17.call",
+      "bytes": 146,
+      "sha256": "d277baf956330fb687f1750419735550af3f487cb6141ece5f082e13115d5d6e",
+      "mode": 436,
+      "role": "Original complete IE execution at index17",
+      "archive": "proof/evid.tgz",
+      "member": "e0030.call"
+    },
+    {
+      "original": "outputs/valid22/ie17.done",
+      "bytes": 141,
+      "sha256": "d962b9defb7b9122a72dff15240a14b725d2dd111cd4351c44cce2ed875c2ad8",
+      "mode": 436,
+      "role": "Original complete IE execution at index17",
+      "archive": "proof/evid.tgz",
+      "member": "e0031.done"
+    },
+    {
+      "original": "outputs/valid22/ie17.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 436,
+      "role": "Original complete IE execution at index17",
+      "archive": "proof/evid.tgz",
+      "member": "e0033.err"
+    },
+    {
+      "original": "outputs/valid22/ie17.out",
+      "bytes": 245,
+      "sha256": "36f66ed41a574dd27eacd1db723df31d337fdca5d7dbf028c113e49de4f29d57",
+      "mode": 436,
+      "role": "Original complete IE execution at index17",
+      "archive": "proof/evid.tgz",
+      "member": "e0032.out"
+    },
+    {
+      "original": "outputs/valid22/ie18.call",
+      "bytes": 146,
+      "sha256": "0043e4c8555c25e16defc89632140c5425fb0a3cba475aed304b0be4155cf349",
+      "mode": 436,
+      "role": "Original complete IE execution at index18",
+      "archive": "proof/evid.tgz",
+      "member": "e0034.call"
+    },
+    {
+      "original": "outputs/valid22/ie18.done",
+      "bytes": 140,
+      "sha256": "e29365adcda01f80579ae495e288656206bd49e97e2170219b3f4f30e18edd3b",
+      "mode": 436,
+      "role": "Original complete IE execution at index18",
+      "archive": "proof/evid.tgz",
+      "member": "e0035.done"
+    },
+    {
+      "original": "outputs/valid22/ie18.err",
+      "bytes": 53,
+      "sha256": "05547b5f28508ed8e6852730ab2f43eb028e0b01022bce2092733bf854e182e0",
+      "mode": 436,
+      "role": "Original complete IE execution at index18",
+      "archive": "proof/evid.tgz",
+      "member": "e0037.err"
+    },
+    {
+      "original": "outputs/valid22/ie18.out",
+      "bytes": 251,
+      "sha256": "bbf337672567f24cf02454ccf17114152fc4c8fede968e73bb3ae6458a607be9",
+      "mode": 436,
+      "role": "Original complete IE execution at index18",
+      "archive": "proof/evid.tgz",
+      "member": "e0036.out"
+    },
+    {
+      "original": "outputs/valid22/ie19.call",
+      "bytes": 176,
+      "sha256": "7e81267540e2327505a92e1037a589d8b1fbf93c4f6f8cf204acaf25e09dda2a",
+      "mode": 436,
+      "role": "Original complete IE execution at index19",
+      "archive": "proof/evid.tgz",
+      "member": "e0038.call"
+    },
+    {
+      "original": "outputs/valid22/ie19.done",
+      "bytes": 171,
+      "sha256": "c7cc27327ff20ec14a42589a9cdfd11bea023f6af94685c1d2b29280420086d7",
+      "mode": 436,
+      "role": "Original complete IE execution at index19",
+      "archive": "proof/evid.tgz",
+      "member": "e0039.done"
+    },
+    {
+      "original": "outputs/valid22/ie19.err",
+      "bytes": 107,
+      "sha256": "a76dee991459d07e53a6c73c10cf7024c352d04bcd64ca410e54a4da2fab07cc",
+      "mode": 436,
+      "role": "Original complete IE execution at index19",
+      "archive": "proof/evid.tgz",
+      "member": "e0041.err"
+    },
+    {
+      "original": "outputs/valid22/ie19.out",
+      "bytes": 253,
+      "sha256": "287fc5e92be51b93e504f9e0db855b82631fc0ff533295fac093ebae88e01786",
+      "mode": 436,
+      "role": "Original complete IE execution at index19",
+      "archive": "proof/evid.tgz",
+      "member": "e0040.out"
+    },
+    {
+      "original": "outputs/valid22/ie20.call",
+      "bytes": 177,
+      "sha256": "d62c52d51342136aa833cf498e900078381be1a96dde2a699d98ce9ea7bba937",
+      "mode": 436,
+      "role": "Original complete IE execution at index20",
+      "archive": "proof/evid.tgz",
+      "member": "e0042.call"
+    },
+    {
+      "original": "outputs/valid22/ie20.done",
+      "bytes": 171,
+      "sha256": "04991efc18996564ff1dc73da2496eb08dbc119195c0c8b083545561ec82f164",
+      "mode": 436,
+      "role": "Original complete IE execution at index20",
+      "archive": "proof/evid.tgz",
+      "member": "e0043.done"
+    },
+    {
+      "original": "outputs/valid22/ie20.err",
+      "bytes": 215,
+      "sha256": "355d700fe431cbb032ca513fc0223b5ee973ed827bcb2db7972204374b0095bd",
+      "mode": 436,
+      "role": "Original complete IE execution at index20",
+      "archive": "proof/evid.tgz",
+      "member": "e0045.err"
+    },
+    {
+      "original": "outputs/valid22/ie20.out",
+      "bytes": 256,
+      "sha256": "371e99556a78cc7930f06f341c78cb0ab4553540966c5a55c821f4f9613a46ce",
+      "mode": 436,
+      "role": "Original complete IE execution at index20",
+      "archive": "proof/evid.tgz",
+      "member": "e0044.out"
+    },
+    {
+      "original": "outputs/valid22/ie21.call",
+      "bytes": 177,
+      "sha256": "f16bbc293118e9e8bfed839752a88ba4e1345a27caa4e516fe9961d9ae708ff0",
+      "mode": 436,
+      "role": "Original complete IE execution at index21",
+      "archive": "proof/evid.tgz",
+      "member": "e0046.call"
+    },
+    {
+      "original": "outputs/valid22/ie21.done",
+      "bytes": 170,
+      "sha256": "2b6e75edadd4552e6bbc7820fee6b7dfdab9e37de25b5ba63ae7a77f7e5eb7b1",
+      "mode": 436,
+      "role": "Original complete IE execution at index21",
+      "archive": "proof/evid.tgz",
+      "member": "e0047.done"
+    },
+    {
+      "original": "outputs/valid22/ie21.err",
+      "bytes": 448,
+      "sha256": "37f90e857700fa9a966d7f41accf6f4a948ab21ab2f5b6c3d8c4343c53117dc6",
+      "mode": 436,
+      "role": "Original complete IE execution at index21",
+      "archive": "proof/evid.tgz",
+      "member": "e0049.err"
+    },
+    {
+      "original": "outputs/valid22/ie21.out",
+      "bytes": 261,
+      "sha256": "9173d576e15257a372ded559413f507be91c2777431e5a311a9d04d8eac2b19e",
+      "mode": 436,
+      "role": "Original complete IE execution at index21",
+      "archive": "proof/evid.tgz",
+      "member": "e0048.out"
+    },
+    {
+      "original": "outputs/valid22/ie22.call",
+      "bytes": 178,
+      "sha256": "3c25e458f5f21d5d3264f77eb5477da45379025f5a0ca798e517cf7b75593e96",
+      "mode": 436,
+      "role": "Original complete IE execution at index22",
+      "archive": "proof/evid.tgz",
+      "member": "e0050.call"
+    },
+    {
+      "original": "outputs/valid22/ie22.done",
+      "bytes": 171,
+      "sha256": "42ec15de0b55fab5b8885653683e7318a47e695c7f4404edbaa1357b19f63bf1",
+      "mode": 436,
+      "role": "Original complete IE execution at index22",
+      "archive": "proof/evid.tgz",
+      "member": "e0051.done"
+    },
+    {
+      "original": "outputs/valid22/ie22.err",
+      "bytes": 912,
+      "sha256": "4fd85d5ac6ed9cfdc1525c2f099a7b5f18259e01b1607e04ab80e5e9419bd043",
+      "mode": 436,
+      "role": "Original complete IE execution at index22",
+      "archive": "proof/evid.tgz",
+      "member": "e0053.err"
+    },
+    {
+      "original": "outputs/valid22/ie22.out",
+      "bytes": 264,
+      "sha256": "a6b0669d4b58d8f5d9fc67161b6b397c5ee757e8bb13a1b52400b3d182f82fc0",
+      "mode": 436,
+      "role": "Original complete IE execution at index22",
+      "archive": "proof/evid.tgz",
+      "member": "e0052.out"
+    },
+    {
+      "original": "outputs/valid22/iecheck",
+      "bytes": 22704,
+      "sha256": "5d9dfff6aa4ca84f6e563ffa0293c6c95d9e13a1ef0d66584d21fc3f072ac46a",
+      "mode": 509,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0029"
+    },
+    {
+      "original": "outputs/valid22/known16.txt",
+      "bytes": 114,
+      "sha256": "da5972b0a8c2c0557209b684ead56c03d61eb5de4d1b2988652179a2f7ce43f9",
+      "mode": 436,
+      "role": "Historical16-term baseline, not new terms",
+      "public": "data/known16.txt"
+    },
+    {
+      "original": "outputs/valid22/method.md",
+      "bytes": 4946,
+      "sha256": "957ff64933276cef32b8747a5496c7c62baf44eca1544ad653766d448a4198e5",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0018.md"
+    },
+    {
+      "original": "outputs/valid22/plan.json",
+      "bytes": 1193,
+      "sha256": "4cbd551c1a7bdce1222eace3382293a658879b6126776b3b0a11b54ca3515549",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0013.json"
+    },
+    {
+      "original": "outputs/valid22/qualify.json",
+      "bytes": 5233,
+      "sha256": "803ac21d3a356ee75c3ae09151c127078482ab5ae7b6affefcd56db3b6b5a84c",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0015.json"
+    },
+    {
+      "original": "outputs/valid22/qualify.py",
+      "bytes": 1358,
+      "sha256": "907fce2ef66fff00c1381033c51072c42143102c434f83b708ea3297f04f0a4f",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0016.py"
+    },
+    {
+      "original": "outputs/valid22/qualify0.py",
+      "bytes": 1361,
+      "sha256": "bce7eac9d3e93def5f918a3b216b8be8a2a4a7fecd46050a66efd7e4d3fd3272",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0017.py"
+    },
+    {
+      "original": "outputs/valid22/qwin1.json",
+      "bytes": 376,
+      "sha256": "4c19decef86c82b01e4ff2d6c4faf558150670d1e982b8e24e47a16118a0c59f",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0024.json"
+    },
+    {
+      "original": "outputs/valid22/qwin2.json",
+      "bytes": 507,
+      "sha256": "5ad78cdf2448052ceea48f90dbc72601cb816e20a7fdea62bcf7ceb6c09eea6d",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0025.json"
+    },
+    {
+      "original": "outputs/valid22/qwin6.json",
+      "bytes": 1045,
+      "sha256": "5de09c801651ff99d57bdcb11c0b4145942478f88ecb0be97b67e12b9d42ec37",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0026.json"
+    },
+    {
+      "original": "outputs/valid22/san10.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0028.err"
+    },
+    {
+      "original": "outputs/valid22/san10.out",
+      "bytes": 226,
+      "sha256": "b48e727910d13734ccaad44b75a15b50e6e849bb167f373885654ccb15255375",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0027.out"
+    },
+    {
+      "original": "outputs/valid22/win17.call",
+      "bytes": 271,
+      "sha256": "d3f81a5f34b4ae0f4b9d96bb782a944abddbaacd2ee856ee2cb21fa05ad8f7ad",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0019.call"
+    },
+    {
+      "original": "outputs/valid22/win17.done",
+      "bytes": 265,
+      "sha256": "d4835bea75e8159d1df9afef149e94fb862c88770c5cf35943815abda1c05c0a",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0020.done"
+    },
+    {
+      "original": "outputs/valid22/win17.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0022.err"
+    },
+    {
+      "original": "outputs/valid22/win17.json",
+      "bytes": 2583,
+      "sha256": "85a25092d90855449fc3ba791d2952623b545d64463ba1ead90baa07a84e6f02",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0023.json"
+    },
+    {
+      "original": "outputs/valid22/win17.out",
+      "bytes": 3716,
+      "sha256": "9c89fb1b02329e4a4d0993862dfee36aa48f6af94c0887280999480ef14049a5",
+      "mode": 436,
+      "role": "Original validation method/input/build/execution evidence",
+      "archive": "proof/evid.tgz",
+      "member": "e0021.out"
+    },
+    {
+      "original": "paper/A180207_v2.tex",
+      "bytes": 36365,
+      "sha256": "2795b8bf3566e2a4fda5499fe68ac10f7629ad0fcede92b01cc0570bde593b0e",
+      "mode": 436,
+      "role": "Current monolithic manuscript, inline bibliography",
+      "public": "paper/A180207_v2.tex"
+    },
+    {
+      "original": "runs/m22/chk0.bin",
+      "bytes": 33555250,
+      "sha256": "9b34f2ba8139342b96e9a20f604e91e5d4c9381fb3a00d09d4660c63d1d37b50",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/chk0.bin"
+    },
+    {
+      "original": "runs/m22/chk1.bin",
+      "bytes": 33555250,
+      "sha256": "f47ed5e7c521db0c386913781028b66533454419015346094a5a78818df956df",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/chk1.bin"
+    },
+    {
+      "original": "runs/m22/lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/lock"
+    },
+    {
+      "original": "runs/m22/log.txt",
+      "bytes": 296,
+      "sha256": "238d346a5afcc30c0cb2e23f7a74686d5997dfc12c997e839ec6381eb6d954bb",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/log.txt"
+    },
+    {
+      "original": "runs/m22/res.tsv",
+      "bytes": 202,
+      "sha256": "aa4b763948ab3af93ebb2292a1b1ebcb73f4ce930c29a848c0d40bc3e86fb494",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/res.tsv"
+    },
+    {
+      "original": "runs/m22/run.json",
+      "bytes": 272,
+      "sha256": "b2bdafb6f0ed0b24879691cb6d4fd0859807ed45ebf364d11c66cf6cd3b9f30c",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/run.json"
+    },
+    {
+      "original": "runs/m22/sha.txt",
+      "bytes": 299,
+      "sha256": "e7c201db09c225b2c4ff280cbbfb985c50b6af1149fb7a667db4efadd50d58a8",
+      "mode": 384,
+      "role": "Original completed native22 job",
+      "archive": "proof/run.tgz",
+      "member": "job/sha.txt"
+    },
+    {
+      "original": "runs/ops22/s01/call.json",
+      "bytes": 1000,
+      "sha256": "d98ffe294af8cfee93d6270e2ea20baf87266815a1094a1cd47b1950d4f69473",
+      "mode": 384,
+      "role": "Original native22 command receipt",
+      "archive": "proof/evid.tgz",
+      "member": "e0010.json"
+    },
+    {
+      "original": "runs/ops22/s01/done.json",
+      "bytes": 1137,
+      "sha256": "3068288fc6413ef1e42d5372d76cc3d605f22ef888dfb010a28cba1a251fe5b0",
+      "mode": 384,
+      "role": "Original native22 completion/timing receipt",
+      "archive": "proof/evid.tgz",
+      "member": "e0011.json"
+    },
+    {
+      "original": "src/Makefile",
+      "bytes": 547,
+      "sha256": "ca182ad945d16320348197d43240efaa51f9dd5ee83b04a0ee749a0c07bd5cac",
+      "mode": 436,
+      "role": "Frozen native build recipe",
+      "public": "src/Makefile"
+    },
+    {
+      "original": "src/a180207",
+      "bytes": 56496,
+      "sha256": "ea896974f469ad50b3f84602c1da13108da344398925a0a40c8f4b24f87cfa66",
+      "mode": 509,
+      "role": "Original executed native binary; historical identity only",
+      "archive": "proof/run.tgz",
+      "member": "bin/a180207"
+    },
+    {
+      "original": "src/a180207.c",
+      "bytes": 38211,
+      "sha256": "c354c1205e92f0bb1cc469f2f590ca0a7dd014c9015fcae120fbc58cfff0ad0b",
+      "mode": 436,
+      "role": "Frozen native producer used for completed count",
+      "public": "src/a180207.c"
+    },
+    {
+      "original": "validation/iecheck.cpp",
+      "bytes": 4790,
+      "sha256": "471e8978c5f37501e80e88cb6f5ff26579755d7b498d2e679086f0d559b11ea9",
+      "mode": 436,
+      "role": "Original different-recurrence IE validator",
+      "public": "check/iecheck.cpp"
+    },
+    {
+      "original": "validation/window_check.py",
+      "bytes": 1943,
+      "sha256": "8294327ec99d35f699a9e4cb7e2d4bea9f8b5993b1ace90e20b37f668522380b",
+      "mode": 436,
+      "role": "Original unrestricted-window Python validator",
+      "public": "check/window_check.py"
+    }
+  ]
+}

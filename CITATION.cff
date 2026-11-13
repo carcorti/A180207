@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying article when using this work. Local publication draft: the Zenodo DOI is a placeholder."
+type: software
+title: "A180207: exact enumeration through n=22"
+version: v1.0
+authors:
+  - family-names: Corti
+    given-names: Carlo
+    affiliation: Independent researcher
+    email: carlo.corti@outlook.com
+repository-code: https://github.com/carcorti/A180207
+url: https://doi.org/10.5281/zenodo.xxxxxxxx
+doi: 10.5281/zenodo.xxxxxxxx
+license: MIT
+abstract: "Exact weighted-subset enumeration of OEIS A180207 through n=22, with original inclusion-exclusion and unrestricted-window validation evidence and the accompanying LaTeX manuscript."
+keywords:
+  - OEIS
+  - A180207
+  - permutations
+  - exact enumeration
+  - dynamic programming
+  - inclusion-exclusion
+preferred-citation:
+  type: article
+  title: "Exact Enumeration of Four-Window Permutations: OEIS A180207 through n=22"
+  authors:
+    - family-names: Corti
+      given-names: Carlo
+      affiliation: Independent researcher
+      email: carlo.corti@outlook.com
+  year: 2026
+  month: 11
+  doi: 10.5281/zenodo.xxxxxxxx
+  url: https://doi.org/10.5281/zenodo.xxxxxxxx
