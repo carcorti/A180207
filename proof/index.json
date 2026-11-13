@@ -484,12 +484,12 @@
       "member": "e0021.out"
     },
     {
-      "original": "paper/A180207_v2.tex",
-      "bytes": 36365,
-      "sha256": "2795b8bf3566e2a4fda5499fe68ac10f7629ad0fcede92b01cc0570bde593b0e",
+      "original": "paper/A180207.tex",
+      "bytes": 36337,
+      "sha256": "968fa239c32f559d7a2f873706f7c99282f48e73d3c58d15892aa50f288714fd",
       "mode": 436,
-      "role": "Current monolithic manuscript, inline bibliography",
-      "public": "paper/A180207_v2.tex"
+      "role": "Current monolithic manuscript, inline bibliography and verified series DOI",
+      "public": "paper/A180207.tex"
     },
     {
       "original": "runs/m22/chk0.bin",

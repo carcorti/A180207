@@ -500,9 +500,9 @@ enumerations.
 The frozen producer is written in C17 with OpenMP and the GCC 128-bit
 extension. The completed run used maximum label $21$ ($n=22$), one worker,
 and prefix depth one. It computes the whole prefix $1\leq n\leq22$ by
-reusing the tail table for the smaller label sets. The retained source,
-build recipe, exact run records and validator records support this local
-draft; the intended release destination is~\cite{corti}.
+reusing the tail table for the smaller label sets. The source, build recipe,
+exact run records and validator records are provided with the computational
+package~\cite{corti}.
 
 The recorded host was an AMD Ryzen 9 7940HS with eight cores and sixteen
 hardware threads, running Linux Mint 22.3 on x86-64, with recorded kernel
@@ -594,8 +594,8 @@ indices. All local validation belongs to the same OpenAI/Codex maintenance
 context. Here ``independent'' describes the indicated algorithmic or
 implementation separation, not a third-party replication of the computations.
 
-Original runnable checkers, inputs and completion records are retained
-locally. File-identity and result-consistency checks reuse that evidence on
+Original runnable checkers, inputs and completion records are included
+in the computational package~\cite{corti}. File-identity and result-consistency checks reuse that evidence on
 unchanged code; they do not constitute fresh enumerations. Incomplete runs,
 interrupted processes and partial state counts contribute no sequence term.
 
@@ -676,11 +676,11 @@ proved counting framework and a validated contiguous numerical prefix.
 \section*{Data availability}
 
 The producer, build recipe, full count table, validation programs, original
-inputs and execution records are retained locally for this draft. The
-repository and archive reference~\cite{corti} designates the intended public
-release and does not assert present public access. The Zenodo DOI shown
-there is a placeholder to be replaced after publication when the author
-supplies the verified official locator.
+inputs and execution records are available in the GitHub repository and
+the Zenodo release series~\cite{corti}. The manuscript source and its
+matching PDF are included in the computational package. The cited Zenodo
+DOI identifies the release series; individual deposited releases have
+distinct version-specific DOIs.
 
 \section*{AI use disclosure}
 
@@ -790,8 +790,8 @@ C. Corti,
 \emph{Exact Enumeration of Four-Window Permutations: OEIS A180207 through
 $n=22$}, GitHub repository and Zenodo archive, 2026.
 \url{https://github.com/carcorti/A180207};
-\url{https://doi.org/10.5281/zenodo.xxxxxxxx}.
-Intended release locations; the Zenodo DOI is a draft placeholder.
+\url{https://doi.org/10.5281/zenodo.24194032}.
+The Zenodo DOI identifies the release series.
 
 \end{thebibliography}
 \end{document}

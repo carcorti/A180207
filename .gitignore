@@ -1,0 +1,16 @@
+# Generated TeX files; the delivered manuscript PDF remains tracked.
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Generated executables and Python caches.
+/src/a180207
+__pycache__/
+*.pyc
+# Editor and local-system files.
+*~
+*.swp
+.DS_Store

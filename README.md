@@ -2,10 +2,10 @@
 
 Carlo Corti, independent researcher, November 2026.
 
-This local publication draft accompanies *Exact Enumeration of Four-Window
+This computational package accompanies *Exact Enumeration of Four-Window
 Permutations: OEIS A180207 through n=22*. The current manuscript is
-[paper/A180207_v2.tex](paper/A180207_v2.tex), an English monolithic LaTeX source
-with its bibliography included. No PDF is supplied.
+[paper/A180207.tex](paper/A180207.tex), an English monolithic LaTeX source
+with its bibliography included. The matching [PDF](paper/A180207.pdf) is supplied.
 
 For n >= 1, a(n) counts permutations p of 0,...,n-1 for which there are n+3
 nonnegative integers x such that p[i] = x[i]+x[i+1]+x[i+2]+x[i+3]. The manuscript
@@ -32,13 +32,14 @@ for historical attribution and related sources.
 | `check/iecheck.cpp` | Original inclusion-exclusion validator; complete recorded domain 1,...,22 |
 | `check/window_check.py` | Original unrestricted-window Python validator, including completed comparison at 17 |
 | `check/verify.py` | Package integrity, recorded-result checks and bounded fresh-build smoke |
-| `paper/A180207_v2.tex` | Current manuscript, including proofs, result table, references and AI disclosure |
+| `paper/A180207.tex`, `paper/A180207.pdf` | Manuscript source and matching PDF, including proofs, result table, references and AI disclosure |
 | `data/` | Canonical 22-term b-file and explicitly historical 16-term baseline |
 | `proof/index.json` | Exact original-to-public/archive mapping, roles, SHA-256, sizes and modes |
 | `proof/run.tgz` | Original complete native job, both checkpoints and original executed native binary |
 | `proof/evid.tgz` | Original development scripts/results, IE/Python execution records, admission and environment records |
 | `checks.sha256` | Exact public file inventory and hashes, excluding this manifest itself |
 | `CITATION.cff`, `LICENSE` | Citation metadata and author-provided MIT license |
+| `.gitignore` | Generated/private-file exclusions; the supplied PDF is retained |
 
 Archives are lossless gzip-compressed tar files. Their short member names are
 storage names only: `proof/index.json` binds each to its unchanged original
@@ -130,19 +131,45 @@ development fixtures or claim to reproduce experiments whose fixtures were
 removed. Each archived original retains its original SHA-256 identity; public
 smoke builds are separate binaries and never replace the historical identities.
 
-## Citation and local status
+## Rebuild the manuscript PDF
 
-The intended first software release version is `v1.0`; this directory is
-currently `PACKAGE_DRAFT - AWAITING AUTHOR INSPECTION`. No release date or
-public availability is asserted. The prospective repository is
-<https://github.com/carcorti/A180207>. The designated Zenodo DOI sentinel is
-`10.5281/zenodo.xxxxxxxx`, with prospective URL
-<https://doi.org/10.5281/zenodo.xxxxxxxx>; it is not a registered release DOI.
-Both software and preferred article metadata in `CITATION.cff` retain that
-sentinel pending the author's verified publication locator. The manuscript's
-prospective availability statement remains unchanged.
+Use TeX Live with pdfLaTeX, Latin Modern, AMS packages, booktabs, geometry,
+microtype and hyperref, plus Poppler for text comparison. From the package
+root, compile into a new temporary
+directory so that auxiliary files do not enter the public payload:
 
-The existing author-approved MIT `LICENSE` is preserved verbatim. Historical
-OEIS terms retain the attribution above and in the manuscript; this package
-does not claim authorship of that prefix. No remote publication, OEIS edit or
-external review dispatch is part of this local preparation.
+```sh
+builddir=$(mktemp -d)
+for pass in 1 2 3; do
+  SOURCE_DATE_EPOCH=1794528000 FORCE_SOURCE_DATE=1 pdflatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory "$builddir" paper/A180207.tex || exit 1
+done
+if grep -Ei "(^!|warning([[:space:](]|:)|overfull|underfull|undefined)" "$builddir/A180207.log"; then exit 1; fi
+pdftotext paper/A180207.pdf "$builddir/reference.txt"
+pdftotext "$builddir/A180207.pdf" "$builddir/rebuilt.txt"
+cmp "$builddir/reference.txt" "$builddir/rebuilt.txt"
+```
+
+The fixed epoch is 13 November 2026 at 00:00 UTC and stabilizes PDF dates.
+The supplied PDF was built with pdfTeX 1.40.25 / TeX Live 2023 (Debian).
+With a matching TeX environment, `cmp` checks the extracted text. PDF bytes
+may differ after rebuilding because of generated identifiers or TeX/font
+versions; `checks.sha256` identifies the exact distributed PDF. Rebuilds
+require visual and log inspection. The final build log must contain no
+errors or warnings.
+
+## Citation and release
+
+This package targets software release `v1.0.1`. The repository is
+<https://github.com/carcorti/A180207>; releases are available from its
+[release page](https://github.com/carcorti/A180207/releases). The Zenodo
+release-series DOI is [10.5281/zenodo.24194032](https://doi.org/10.5281/zenodo.24194032).
+Use this series DOI for the project citation. Each deposited release has
+its own version-specific DOI for identifying a fixed archive; the series
+DOI does not identify immutable bytes of one release. `CITATION.cff` gives
+both software and preferred article citation metadata with that series DOI.
+
+The author-approved MIT `LICENSE` is preserved verbatim. Historical OEIS
+terms retain the attribution above and in the manuscript; this package
+does not claim authorship of that prefix. The software release number
+identifies the computational package. The manuscript uses the stable
+filenames `A180207.tex` and `A180207.pdf`.
